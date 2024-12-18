@@ -1,18 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-//package CMSC122Project;
-
 import java.util.Stack;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import utils.SoundManager;
 
 public class JLevelTwo extends javax.swing.JFrame {
-    /**
-     * Creates new form JigsawPuzzle
-     */
     
     public JLevelTwo() {
         initComponents();
@@ -65,12 +57,14 @@ public class JLevelTwo extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
 
         jLabel2.setBackground(java.awt.Color.white);
-        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 1, 50)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tw Cen MT", 1, 50)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(33, 79, 75));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("No. of Clicks:");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
 
-        jLabelNumofClicks.setFont(new java.awt.Font("Trebuchet MS", 1, 80)); // NOI18N
+        jLabelNumofClicks.setFont(new java.awt.Font("Tw Cen MT", 1, 80)); // NOI18N
+        jLabelNumofClicks.setForeground(new java.awt.Color(33, 79, 75));
         jLabelNumofClicks.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNumofClicks.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
 
@@ -98,30 +92,33 @@ public class JLevelTwo extends javax.swing.JFrame {
         jPanel2.setBackground(java.awt.Color.lightGray);
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
 
-        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 75)); // NOI18N
-        jLabel1.setText("   Level Two: Jigsaw Puzzle");
+        jLabel1.setFont(new java.awt.Font("Tw Cen MT", 1, 75)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(33, 79, 75));
+        jLabel1.setText("   Level 2: Jigsaw Puzzle   ");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(116, 116, 116)
+                .addGap(188, 188, 188)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel3.setBackground(java.awt.Color.lightGray);
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
 
+        jButton2.setBackground(new java.awt.Color(227, 249, 248));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(42, 252, 152));
         jButton2.setText("2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +126,9 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setBackground(new java.awt.Color(227, 249, 248));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(42, 252, 152));
         jButton3.setText("3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,7 +136,9 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setBackground(new java.awt.Color(227, 249, 248));
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(9, 232, 94));
         jButton4.setText("4");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +146,9 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setBackground(new java.awt.Color(227, 249, 248));
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(9, 232, 94));
         jButton5.setText("5");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,7 +156,9 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setBackground(new java.awt.Color(227, 249, 248));
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(9, 232, 94));
         jButton6.setText("6");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,7 +166,9 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setBackground(new java.awt.Color(227, 249, 248));
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 152, 14));
         jButton7.setText("7");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,7 +176,9 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
+        jButton8.setBackground(new java.awt.Color(227, 249, 248));
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 152, 14));
         jButton8.setText("8");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,7 +186,9 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(227, 249, 248));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(42, 252, 152));
         jButton1.setText("1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,7 +196,9 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
+        jButton16.setBackground(new java.awt.Color(227, 249, 248));
         jButton16.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        jButton16.setForeground(new java.awt.Color(33, 79, 75));
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
@@ -244,7 +257,8 @@ public class JLevelTwo extends javax.swing.JFrame {
         jPanel4.setBackground(java.awt.Color.white);
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
 
-        jButtonSolvePuzzle.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
+        jButtonSolvePuzzle.setFont(new java.awt.Font("Tw Cen MT", 1, 35)); // NOI18N
+        jButtonSolvePuzzle.setForeground(new java.awt.Color(33, 79, 75));
         jButtonSolvePuzzle.setText("Display Solved Puzzle");
         jButtonSolvePuzzle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
         jButtonSolvePuzzle.addActionListener(new java.awt.event.ActionListener() {
@@ -253,7 +267,8 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
-        jButtonReshufflePuzzle.setFont(new java.awt.Font("Tahoma", 1, 35)); // NOI18N
+        jButtonReshufflePuzzle.setFont(new java.awt.Font("Tw Cen MT", 1, 35)); // NOI18N
+        jButtonReshufflePuzzle.setForeground(new java.awt.Color(33, 79, 75));
         jButtonReshufflePuzzle.setText("Reshuffle Puzzle");
         jButtonReshufflePuzzle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
         jButtonReshufflePuzzle.addActionListener(new java.awt.event.ActionListener() {
@@ -262,7 +277,8 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
-        jButtonLeavePuzzle.setFont(new java.awt.Font("Tahoma", 1, 35)); // NOI18N
+        jButtonLeavePuzzle.setFont(new java.awt.Font("Tw Cen MT", 1, 35)); // NOI18N
+        jButtonLeavePuzzle.setForeground(new java.awt.Color(33, 79, 75));
         jButtonLeavePuzzle.setText("Leave Game");
         jButtonLeavePuzzle.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
         jButtonLeavePuzzle.addActionListener(new java.awt.event.ActionListener() {
@@ -271,7 +287,8 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
-        jButtonHint.setFont(new java.awt.Font("Tahoma", 1, 35)); // NOI18N
+        jButtonHint.setFont(new java.awt.Font("Tw Cen MT", 1, 35)); // NOI18N
+        jButtonHint.setForeground(new java.awt.Color(33, 79, 75));
         jButtonHint.setText("Hint for Solving");
         jButtonHint.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
         jButtonHint.addActionListener(new java.awt.event.ActionListener() {
@@ -280,7 +297,8 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         });
 
-        jButtonRequestSolution.setFont(new java.awt.Font("Tahoma", 1, 35)); // NOI18N
+        jButtonRequestSolution.setFont(new java.awt.Font("Tw Cen MT", 1, 35)); // NOI18N
+        jButtonRequestSolution.setForeground(new java.awt.Color(33, 79, 75));
         jButtonRequestSolution.setText("Request Solution");
         jButtonRequestSolution.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(95, 158, 160), 4));
         jButtonRequestSolution.addActionListener(new java.awt.event.ActionListener() {
@@ -312,7 +330,7 @@ public class JLevelTwo extends javax.swing.JFrame {
                 .addComponent(jButtonSolvePuzzle, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButtonReshufflePuzzle, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addComponent(jButtonRequestSolution, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(13, 13, 13)
                 .addComponent(jButtonLeavePuzzle, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -369,16 +387,18 @@ public class JLevelTwo extends javax.swing.JFrame {
         }
         return false;
     }
+    
+
     //==========================================================================
     public void FixedShuffle() {
         jButton1.setText(Integer.toString(1));
-        jButton2.setText(Integer.toString(6));
+        jButton2.setText(Integer.toString(5));
         jButton3.setText(Integer.toString(2));
         jButton4.setText(Integer.toString(4));
-        jButton5.setText(Integer.toString(5));
-        jButton6.setText(Integer.toString(8));
-        jButton7.setText(Integer.toString(3));
-        jButton8.setText(Integer.toString(7));
+        jButton5.setText(Integer.toString(3));
+        jButton6.setText(Integer.toString(6));
+        jButton7.setText(Integer.toString(7));
+        jButton8.setText(Integer.toString(8));
         jButton16.setText("");
     }
     //==========================================================================
@@ -394,7 +414,18 @@ public class JLevelTwo extends javax.swing.JFrame {
         
         if ("1".equals(b1) && "2".equals(b2) && "3".equals(b3) && "4".equals(b4) && "5".equals(b5) && "6".equals(b6)
                 && "7".equals(b7) && "8".equals(b8)) {
-            JOptionPane.showMessageDialog(this, "Congratulations, you won the game! ", "Jigsaw Puzzle Number Game", JOptionPane.INFORMATION_MESSAGE);
+            SoundManager.stopBackgroundMusic();
+            SoundManager.playSoundEffect("/audio/puzzle_win.wav");
+            JOptionPane.showMessageDialog(this, """
+                                                Amazing Job! 🎊
+                                                
+                                                You’ve conquered Level 2 of the Jigsaw Puzzle Number Game!
+                                                
+                                                Your focus and strategy are paying off. Are you ready to tackle the final challenge in Level 3?
+                                                
+                                                The ultimate puzzle awaits—bring your A-game and show what you’ve got!
+                                                
+                                                """, "Jigsaw Puzzle Number Game", JOptionPane.INFORMATION_MESSAGE);
             this.dispose();
             new JLevelThree().setVisible(true);
         }    
@@ -402,8 +433,10 @@ public class JLevelTwo extends javax.swing.JFrame {
         CountInc += 1;
         jLabelNumofClicks.setText(Integer.toString(CountInc));
     }
+    
     //==========================================================================
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        SoundManager.playSoundEffect("/audio/Click.wav");
         if (ValidMoveCheck(jButton2, jButton1) == true) {
             butnum.push(jButton2);
             butnum.push(jButton1);
@@ -425,7 +458,9 @@ public class JLevelTwo extends javax.swing.JFrame {
         DisplaySolution();
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    //==========================================================================
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        SoundManager.playSoundEffect("/audio/Click.wav");
         if (ValidMoveCheck(jButton1, jButton2) == true) {
             butnum.push(jButton1);
             butnum.push(jButton2);
@@ -442,7 +477,9 @@ public class JLevelTwo extends javax.swing.JFrame {
         DisplaySolution();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    //==========================================================================
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        SoundManager.playSoundEffect("/audio/Click.wav");
         if (ValidMoveCheck(jButton3, jButton2) == true) {
             butnum.push(jButton3);
             butnum.push(jButton2);
@@ -459,7 +496,9 @@ public class JLevelTwo extends javax.swing.JFrame {
         DisplaySolution();
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    //==========================================================================
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        SoundManager.playSoundEffect("/audio/Click.wav");
         if (ValidMoveCheck(jButton4, jButton1)== true) {
             butnum.push(jButton4);
             butnum.push(jButton1);
@@ -481,7 +520,9 @@ public class JLevelTwo extends javax.swing.JFrame {
         DisplaySolution();
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    //==========================================================================
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        SoundManager.playSoundEffect("/audio/Click.wav");
         if (ValidMoveCheck(jButton5, jButton2) == true) {
             butnum.push(jButton5);
             butnum.push(jButton2);
@@ -508,7 +549,9 @@ public class JLevelTwo extends javax.swing.JFrame {
         DisplaySolution();
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    //==========================================================================
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        SoundManager.playSoundEffect("/audio/Click.wav");
         if (ValidMoveCheck(jButton6, jButton3) == true) {
             butnum.push(jButton6);
             butnum.push(jButton3);
@@ -530,7 +573,9 @@ public class JLevelTwo extends javax.swing.JFrame {
         DisplaySolution();
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    //==========================================================================
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        SoundManager.playSoundEffect("/audio/Click.wav");
         if (ValidMoveCheck(jButton7, jButton4) == true) {
             butnum.push(jButton7);
             butnum.push(jButton4);
@@ -547,7 +592,9 @@ public class JLevelTwo extends javax.swing.JFrame {
         DisplaySolution();
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    //==========================================================================
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        SoundManager.playSoundEffect("/audio/Click.wav");
         if (ValidMoveCheck(jButton8, jButton5) == true) {
             butnum.push(jButton8);
             butnum.push(jButton5);
@@ -569,7 +616,46 @@ public class JLevelTwo extends javax.swing.JFrame {
         DisplaySolution();
     }//GEN-LAST:event_jButton8ActionPerformed
 
+    //==========================================================================
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        SoundManager.playBackgroundMusic("/audio/background_music.wav");
+        String b1 = jButton1.getText();
+        String b2 = jButton2.getText();
+        String b3 = jButton3.getText();
+        String b4 = jButton4.getText();
+        String b5 = jButton5.getText();
+        String b6 = jButton6.getText();
+        String b7 = jButton7.getText();
+        String b8 = jButton8.getText();
+
+        if ("1".equals(b1) && "2".equals(b2) && "3".equals(b3) && "4".equals(b4) && "5".equals(b5) && "6".equals(b6)
+                && "7".equals(b7) && "8".equals(b8)) {
+            JOptionPane.showMessageDialog(this, """
+                                            The challenge just got a little tougher! 
+                                                
+                                            Your 3x3 puzzle will now be shuffled, and your goal is to arrange the numbers in ascending order.
+                                            
+                                            Remember, solving one row or column at a time can make things easier.
+                                                
+                                            If you get stuck, use the helpful buttons on the right for guidance.  
+                                            
+                                            Good luck and have fun solving the puzzle! """, "Level 2 Jigsaw Puzzle", JOptionPane.INFORMATION_MESSAGE);
+            FixedShuffle();
+        }
+    }//GEN-LAST:event_formWindowActivated
+
+    //==========================================================================
+    private void jButtonSolvePuzzleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSolvePuzzleActionPerformed
+        jButton1.setText("1");
+        jButton2.setText("2");
+        jButton3.setText("3");
+        jButton4.setText("4");
+        jButton5.setText("5");
+        jButton6.setText("6");
+        jButton7.setText("7");
+        jButton8.setText("8");
+        jButton16.setText("");
+        
         String b1 = jButton1.getText();
         String b2 = jButton2.getText();
         String b3 = jButton3.getText();
@@ -582,36 +668,28 @@ public class JLevelTwo extends javax.swing.JFrame {
         if ("1".equals(b1) && "2".equals(b2) && "3".equals(b3) && "4".equals(b4) && "5".equals(b5) && "6".equals(b6)
                 && "7".equals(b7) && "8".equals(b8)) {
             JOptionPane.showMessageDialog(this, """
-                                            Hello there, welcome to the Jigsaw Puzzle Number Game!
-                                            
-                                            The puzzle will now be shuffled and your job is to solve it
-                                            in the proper ascending order.
-                                            
-                                            Also, don't worry you have the option to click helpful buttons 
-                                            on the right side to guide you in solving the puzzle!    
-                                            
-                                            Good Luck! """, "Jigsaw Puzzle Number Game", JOptionPane.INFORMATION_MESSAGE);
-            FixedShuffle();
-        }
-    }//GEN-LAST:event_formWindowActivated
-
-    private void jButtonSolvePuzzleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSolvePuzzleActionPerformed
-        jButton1.setText("1");
-        jButton2.setText("2");
-        jButton3.setText("3");
-        jButton4.setText("4");
-        jButton5.setText("5");
-        jButton6.setText("6");
-        jButton7.setText("7");
-        jButton8.setText("8");
-        jButton16.setText("");
+                                                Amazing Job! 🎊
+                                                
+                                                You’ve conquered Level 2 of the Jigsaw Puzzle Number Game!
+                                                
+                                                Your focus and strategy are paying off. Are you ready to tackle the final challenge in Level 3?
+                                                
+                                                The ultimate puzzle awaits—bring your A-game and show what you’ve got! 
+                                                
+                                                """, "Jigsaw Puzzle Number Game", JOptionPane.INFORMATION_MESSAGE);
+            this.dispose();
+            new JLevelThree().setVisible(true);
+        }    
     }//GEN-LAST:event_jButtonSolvePuzzleActionPerformed
 
+    //==========================================================================
     private void jButtonReshufflePuzzleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonReshufflePuzzleActionPerformed
         FixedShuffle();
     }//GEN-LAST:event_jButtonReshufflePuzzleActionPerformed
+    
     private JFrame frame;
     
+    //==========================================================================
     private void jButtonLeavePuzzleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLeavePuzzleActionPerformed
         frame = new JFrame("Leave");
         
@@ -620,10 +698,12 @@ public class JLevelTwo extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButtonLeavePuzzleActionPerformed
 
+    //==========================================================================
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
         JOptionPane.showMessageDialog(this, "You are not clicking within the puzzle! ", "Jigsaw Puzzle Number Game", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_formMouseClicked
 
+    //==========================================================================
     private void jButtonHintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonHintActionPerformed
         JOptionPane.showMessageDialog(this, """
                                             Hint: Use Divide and Conquer (Try
@@ -634,7 +714,9 @@ public class JLevelTwo extends javax.swing.JFrame {
                                             correct solution.""", "Jigsaw Puzzle Number Game", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButtonHintActionPerformed
 
+    //==========================================================================
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        SoundManager.playSoundEffect("/audio/Click.wav");
         if (ValidMoveCheck(jButton16, jButton6) == true) {
             butnum.push(jButton16);
             butnum.push(jButton6);
@@ -651,6 +733,7 @@ public class JLevelTwo extends javax.swing.JFrame {
         DisplaySolution();
     }//GEN-LAST:event_jButton16ActionPerformed
 
+    //==========================================================================
     private void jButtonRequestSolutionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRequestSolutionActionPerformed
         for (;!butnum.isEmpty();) {
             JButton b1 = butnum.pop();
@@ -662,66 +745,55 @@ public class JLevelTwo extends javax.swing.JFrame {
             }
         }
         
+        ValidMoveCheck(jButton6, jButton16);
+        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle?", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
+            return;
+        }
+        
+        ValidMoveCheck(jButton3, jButton6);
+        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle?", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
+            return;
+        }
+        
+        ValidMoveCheck(jButton2, jButton3);
+        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle? ", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
+            return;
+        }
+        
+        ValidMoveCheck(jButton5, jButton2);
+        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle? ", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
+            return;
+        }
+        
+        ValidMoveCheck(jButton6, jButton5);
+        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle? ", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
+            return;
+        }
+        
+        ValidMoveCheck(jButton3, jButton6);
+        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle?", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
+            return;
+        }
+        
         ValidMoveCheck(jButton2, jButton3);
         if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle?", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
             return;
         }
         
-        ValidMoveCheck(jButton1, jButton2);
-        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle?", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
-            return;
-        }
-        
-        ValidMoveCheck(jButton3, jButton2);
+        ValidMoveCheck(jButton5, jButton2);
         if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle? ", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
             return;
         }
         
-        ValidMoveCheck(jButton7, jButton3);
-        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle? ", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
-            return;
-        }
-        
-        ValidMoveCheck(jButton8, jButton7);
-        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle? ", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
-            return;
-        }
+        ValidMoveCheck(jButton6, jButton5);
+//        if (JOptionPane.showConfirmDialog(frame, "Would you want some more hints in solving the puzzle? ", "Jigsaw Puzzle Number Game", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION) {
+//            return;
+//        }
+//        
+        ValidMoveCheck(jButton16, jButton6);
         
         DisplaySolution();
     }//GEN-LAST:event_jButtonRequestSolutionActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JLevelTwo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JLevelTwo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JLevelTwo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JLevelTwo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        
-        // Changed Anonymous inner class to another expression.
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
