@@ -19,8 +19,9 @@ public class SoundManager {
                 return; // Ensure only one instance of background music plays
             }
             backgroundClip = AudioSystem.getClip();
+            // Use getResource() for accessing resources inside the JAR
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(
-                    SoundManager.class.getResourceAsStream(filePath)
+                    SoundManager.class.getResource(filePath)
             );
             backgroundClip.open(audioStream);
             backgroundClip.loop(Clip.LOOP_CONTINUOUSLY); // Loop the music
@@ -43,8 +44,9 @@ public class SoundManager {
     public static void playSoundEffect(String filePath) {
         try {
             Clip clip = AudioSystem.getClip();
+            // Use getResource() for accessing resources inside the JAR
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(
-                    SoundManager.class.getResourceAsStream(filePath)
+                    SoundManager.class.getResource(filePath)
             );
             clip.open(audioStream);
             clip.start();

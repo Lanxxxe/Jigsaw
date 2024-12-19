@@ -1,7 +1,4 @@
 import java.util.Stack;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -234,7 +231,7 @@ public class JLevelOne extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButtonHint, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButtonSolvePuzzle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonSolvePuzzle, javax.swing.GroupLayout.DEFAULT_SIZE, 348, Short.MAX_VALUE)
                     .addComponent(jButtonReshufflePuzzle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButtonLeavePuzzle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -264,7 +261,7 @@ public class JLevelOne extends javax.swing.JFrame {
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(166, 166, 166)
+                        .addGap(149, 149, 149)
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -306,8 +303,6 @@ public class JLevelOne extends javax.swing.JFrame {
     }
     
     //==========================================================================
-
-    //==========================================================================
     public void FixedShuffle() {
         jButton1.setText(Integer.toString(2));
         jButton2.setText(Integer.toString(3));  
@@ -323,7 +318,7 @@ public class JLevelOne extends javax.swing.JFrame {
         
         if ("1".equals(b1) && "2".equals(b2) && "3".equals(b3)) {
             SoundManager.stopBackgroundMusic();
-            SoundManager.playSoundEffect("/audio/puzzle_win.wav");
+            SoundManager.playSoundEffect("/resource/audio/puzzle_win.wav");
             JOptionPane.showMessageDialog(this, """
                                                 Congratulations! 🎉
                                                                                             
@@ -346,7 +341,7 @@ public class JLevelOne extends javax.swing.JFrame {
     
     //==========================================================================
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-        SoundManager.playBackgroundMusic("/audio/background_music.wav");
+        SoundManager.playBackgroundMusic("/resource/audio/Background_music.wav");
         String b1 = jButton1.getText();
         String b2 = jButton2.getText();
         String b3 = jButton3.getText();
@@ -379,7 +374,7 @@ public class JLevelOne extends javax.swing.JFrame {
         
         if ("1".equals(b1) && "2".equals(b2) && "3".equals(b3)) {
             SoundManager.stopBackgroundMusic();
-            SoundManager.playSoundEffect("/audio/puzzle_win.wav");
+            SoundManager.playSoundEffect("/resource/audio/puzzle_win.wav");
             JOptionPane.showMessageDialog(this, """
                                             Congratulations! 🎉
                                             
@@ -432,7 +427,7 @@ public class JLevelOne extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton16, jButton3) == true) {    
             butnum.push(jButton16);
             butnum.push(jButton3);
@@ -451,13 +446,14 @@ public class JLevelOne extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton1, jButton2) == true) {
             butnum.push(jButton1);
             butnum.push(jButton2);
         }
 
-        else if (ValidMoveCheck(jButton1, jButton3) == true) {            butnum.push(jButton1);
+        else if (ValidMoveCheck(jButton1, jButton3) == true) {            
+            butnum.push(jButton1);
             butnum.push(jButton3);
         }
 
@@ -469,7 +465,7 @@ public class JLevelOne extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton2, jButton1) == true) {
             butnum.push(jButton2);
             butnum.push(jButton1);
@@ -493,7 +489,7 @@ public class JLevelOne extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton3, jButton2) == true) {
             butnum.push(jButton3);
             butnum.push(jButton2);

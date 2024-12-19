@@ -476,6 +476,7 @@ public class JLevelThree extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     int CountInc;
+    private boolean welcomeMessageShown = false;
     Stack <JButton> butnum = new Stack <> ();
     public boolean ValidMoveCheck (JButton b1, JButton b2) {
         String ReshuffleNum = b2.getText();
@@ -530,7 +531,7 @@ public class JLevelThree extends javax.swing.JFrame {
                 && "7".equals(b7) && "8".equals(b8) && "9".equals(b9) && "10".equals(b10) && "11".equals(b11) && "12".equals(b12)
                 && "13".equals(b13) && "14".equals(b14) && "15".equals(b15)) {
             SoundManager.stopBackgroundMusic();
-            SoundManager.playSoundEffect("/audio/puzzle_win.wav");
+            SoundManager.playSoundEffect("/resource/audio/puzzle_win.wav");
             JOptionPane.showMessageDialog(this, """
                                                 Incredible! 🌟
                                                 
@@ -543,6 +544,8 @@ public class JLevelThree extends javax.swing.JFrame {
                                                 Feel free to play again or challenge yourself to beat your best moves. 
                                                 
                                                 """, "Jigsaw Puzzle Number Game", JOptionPane.INFORMATION_MESSAGE);
+            this.dispose();
+            new JLevelOne().setVisible(true);
         }    
         
         CountInc += 1;
@@ -551,7 +554,7 @@ public class JLevelThree extends javax.swing.JFrame {
     
     //==========================================================================
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton2, jButton1) == true) {
             
             butnum.push(jButton2);
@@ -576,7 +579,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton1, jButton2) == true) {
             butnum.push(jButton1);
             butnum.push(jButton2);
@@ -595,7 +598,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton3, jButton2) == true) {
             butnum.push(jButton3);
             butnum.push(jButton2);
@@ -619,7 +622,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton4, jButton3)== true) {
             butnum.push(jButton4);
             butnum.push(jButton3);
@@ -638,7 +641,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton5, jButton1) == true) {
             butnum.push(jButton5);
             butnum.push(jButton1);
@@ -662,7 +665,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton6, jButton2) == true) {
             butnum.push(jButton6);
             butnum.push(jButton2);
@@ -691,7 +694,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton7, jButton3) == true) {
             butnum.push(jButton7);
             butnum.push(jButton3);
@@ -720,7 +723,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton8, jButton4) == true) {
             butnum.push(jButton8);
             butnum.push(jButton4);
@@ -744,7 +747,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton9, jButton5) == true) {
             butnum.push(jButton9);
             butnum.push(jButton5);
@@ -768,7 +771,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton10, jButton6) == true) {
             butnum.push(jButton10);
             butnum.push(jButton6);
@@ -797,7 +800,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton11, jButton7) == true) {
             butnum.push(jButton11);
             butnum.push(jButton7);
@@ -826,7 +829,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton12, jButton8) == true) {
             butnum.push(jButton12);
             butnum.push(jButton8);
@@ -850,7 +853,11 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-        SoundManager.playBackgroundMusic("/audio/background_music.wav");
+        if (welcomeMessageShown) {
+            return; // Skip if the message was already displayed
+        }
+        SoundManager.playBackgroundMusic("/resource/audio/Background_music.wav");
+        
         String b1 = jButton1.getText();
         String b2 = jButton2.getText();
         String b3 = jButton3.getText();
@@ -884,6 +891,7 @@ public class JLevelThree extends javax.swing.JFrame {
                                             
                                             Good Luck! """, "Level 3 Jigsaw Puzzle", JOptionPane.INFORMATION_MESSAGE);
             FixedShuffle();
+            welcomeMessageShown = true;
         }
     }//GEN-LAST:event_formWindowActivated
 
@@ -925,7 +933,8 @@ public class JLevelThree extends javax.swing.JFrame {
         if ("1".equals(b1) && "2".equals(b2) && "3".equals(b3) && "4".equals(b4) && "5".equals(b5) && "6".equals(b6)
                 && "7".equals(b7) && "8".equals(b8) && "9".equals(b9) && "10".equals(b10) && "11".equals(b11) && "12".equals(b12)
                 && "13".equals(b13) && "14".equals(b14) && "15".equals(b15)) {
-            SoundManager.playSoundEffect("/audio/puzzle_win.wav");
+            SoundManager.stopBackgroundMusic();
+            SoundManager.playSoundEffect("/resource/audio/puzzle_win.wav");
             JOptionPane.showMessageDialog(this, """
                                                 Incredible! 🌟
                                                 
@@ -976,7 +985,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton13, jButton9) == true) {
             butnum.push(jButton13);
             butnum.push(jButton9);
@@ -996,7 +1005,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton14, jButton10) == true) {
             butnum.push(jButton14);
             butnum.push(jButton10);
@@ -1020,7 +1029,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-       SoundManager.playSoundEffect("/audio/Click.wav");
+       SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton15, jButton11) == true) {
             butnum.push(jButton15);
             butnum.push(jButton11);
@@ -1044,7 +1053,7 @@ public class JLevelThree extends javax.swing.JFrame {
 
     //==========================================================================
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        SoundManager.playSoundEffect("/audio/Click.wav");
+        SoundManager.playSoundEffect("/resource/audio/Click.wav");
         if (ValidMoveCheck(jButton16, jButton12) == true) {
             butnum.push(jButton16);
             butnum.push(jButton12);
@@ -1129,6 +1138,7 @@ public class JLevelThree extends javax.swing.JFrame {
         }
         
         ValidMoveCheck(jButton16, jButton15);
+        
         
         DisplaySolution();
     }//GEN-LAST:event_jButtonRequestSolutionActionPerformed

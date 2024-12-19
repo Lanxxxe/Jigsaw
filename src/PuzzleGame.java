@@ -8,7 +8,7 @@ public class PuzzleGame extends JFrame {
     
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            
+          
             PuzzleGame game = new PuzzleGame();
             game.setVisible(true);
         });
