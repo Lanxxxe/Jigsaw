@@ -661,33 +661,7 @@ public class JLevelTwo extends javax.swing.JFrame {
         jButton7.setText("7");
         jButton8.setText("8");
         jButton16.setText("");
-        
-        String b1 = jButton1.getText();
-        String b2 = jButton2.getText();
-        String b3 = jButton3.getText();
-        String b4 = jButton4.getText();
-        String b5 = jButton5.getText();
-        String b6 = jButton6.getText();
-        String b7 = jButton7.getText();
-        String b8 = jButton8.getText();
-        
-        if ("1".equals(b1) && "2".equals(b2) && "3".equals(b3) && "4".equals(b4) && "5".equals(b5) && "6".equals(b6)
-                && "7".equals(b7) && "8".equals(b8)) {
-            SoundManager.stopBackgroundMusic();
-            SoundManager.playSoundEffect("/resource/audio/puzzle_win.wav");
-            JOptionPane.showMessageDialog(this, """
-                                                Amazing Job! 🎊
-                                                
-                                                You’ve conquered Level 2 of the Jigsaw Puzzle Number Game!
-                                                
-                                                Your focus and strategy are paying off. Are you ready to tackle the final challenge in Level 3?
-                                                
-                                                The ultimate puzzle awaits—bring your A-game and show what you’ve got! 
-                                                
-                                                """, "Jigsaw Puzzle Number Game", JOptionPane.INFORMATION_MESSAGE);
-            this.dispose();
-            new JLevelThree().setVisible(true);
-        }    
+          
     }//GEN-LAST:event_jButtonSolvePuzzleActionPerformed
 
     //==========================================================================

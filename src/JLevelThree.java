@@ -914,40 +914,6 @@ public class JLevelThree extends javax.swing.JFrame {
         jButton15.setText("15");
         jButton16.setText("");
         
-        String b1 = jButton1.getText();
-        String b2 = jButton2.getText();
-        String b3 = jButton3.getText();
-        String b4 = jButton4.getText();
-        String b5 = jButton5.getText();
-        String b6 = jButton6.getText();
-        String b7 = jButton7.getText();
-        String b8 = jButton8.getText();
-        String b9 = jButton9.getText();
-        String b10 = jButton10.getText();
-        String b11 = jButton11.getText();
-        String b12 = jButton12.getText();
-        String b13 = jButton13.getText();
-        String b14 = jButton14.getText();
-        String b15 = jButton15.getText();
-        
-        if ("1".equals(b1) && "2".equals(b2) && "3".equals(b3) && "4".equals(b4) && "5".equals(b5) && "6".equals(b6)
-                && "7".equals(b7) && "8".equals(b8) && "9".equals(b9) && "10".equals(b10) && "11".equals(b11) && "12".equals(b12)
-                && "13".equals(b13) && "14".equals(b14) && "15".equals(b15)) {
-            SoundManager.stopBackgroundMusic();
-            SoundManager.playSoundEffect("/resource/audio/puzzle_win.wav");
-            JOptionPane.showMessageDialog(this, """
-                                                Incredible! 🌟
-                                                
-                                                You’ve completed Level 3 and mastered the Jigsaw Puzzle Number Game!
-                                                
-                                                Your skills, patience, and determination have led you to victory. 
-                                                
-                                                Celebrate your success—you’ve earned it!
-                                                
-                                                Feel free to play again or challenge yourself to beat your best time.
-                                                
-                                                """, "Level 3 Jigsaw Puzzle", JOptionPane.INFORMATION_MESSAGE);
-        }
     }//GEN-LAST:event_jButtonSolvePuzzleActionPerformed
 
     
